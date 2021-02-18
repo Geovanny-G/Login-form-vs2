@@ -1,0 +1,369 @@
+body {
+    background: linear-gradient( #3C3B3F, #605C3C);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.estilo_form{
+    position: relative ;
+    margin: 20px 8px;
+    padding: 1%;
+    border-radius: 8px;
+    background-color: #345;
+    width: 94vw;
+    overflow: hidden;
+   /* box-shadow: 0 5px 6px 1px rgba(0,0,0,.6),
+    -2px 8px 8px 2px rgba(0,0,0,.4);*/
+    box-shadow: 0 5px 5px -2px rgba(0,0,0,.8),
+   -2px 8px 7px 3px rgba(0,0,0,.4) ;
+}
+
+
+.encabezado{
+    position: relative;
+    width: 197px;
+    height: 25px;
+    margin: 20px auto;
+    padding: 2px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 4px 2px #222;
+
+}
+
+.deslizador{
+    position: absolute;
+    background-color: #45b;
+    left: 0;
+    top: 0;
+    height: 100%;
+    /*width: 95px;*/
+    width: 106px;
+    border-radius: 19px;
+    
+}
+
+.encabezado .btn{
+    position: relative;
+    border: none;
+    margin: auto;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+/*********formulario********/
+
+.formulario{
+    text-align: center;
+    position: relative;
+    
+}
+
+.formulario h2{
+    color: #ccc;
+    text-transform: capitalize;
+    font-size: 22pt;
+}
+
+/*******a los input********/
+.div_name p, .div_contraseña p{
+    text-align: left;
+    padding-left: 65px;
+    margin-bottom: 15px;
+    visibility: hide;
+    font-weight: bold;
+}
+
+
+.usuario, .pass{
+    width: 12rem;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #222;
+    border-radius: 3px;
+    line-height: 1.8;
+    transition: all .7s;
+    text-align: center;
+}
+
+.usuario:focus{
+    width: 14rem;
+    border: 2px solid rgb(0,255,254);
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 0 20px 1px rgb(0,255,224);
+    padding: 2px;
+    border-radius: 5px;
+    transition: all .7s;
+    font-weight: bold;
+}
+
+.pass:focus{
+    width: 14rem;
+    border: 2px solid rgb(0,255,254);
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 0 20px 1px rgb(0,255,224);
+    padding: 2px;
+    border-radius: 5px;
+    transition: all .7s;
+    font-weight: bold;
+}
+
+.pass:focus:invalid{
+    width: 12rem;
+    border: 2px solid #c22;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 0 20px 1px #c22;
+    padding: 2px;
+    border-radius: 5px;
+    transition: all .7s;
+    font-weight: bold;
+}
+
+::placeholder{
+    color: #808080;
+    font-weight: bold;
+}
+/************boton enviar*****************/
+
+
+.enviar{
+   /* background-color: #277;*/
+   background-image: linear-gradient(to right, #556270, #2c3e50);
+    border: none;
+    border-radius: 5px;
+    font-size: 14pt;
+  /*  width: 75px;*/
+    height: 35px;
+    font-weight: bold;
+    color: #fcc;
+    box-shadow: 3px 4px 7px -2px #000,
+    0 0 4px 1px #222 inset;
+    padding: 0 15px;
+}
+
+.btn_enviar{
+    padding: 15px;
+    margin-right: 15vw;
+    text-align: right;
+}
+.input_check{
+    padding: 8px;
+    text-align: left;
+    margin-left: 14vw;
+    color: #008080;
+    font-weight: 700;
+}
+
+
+
+/********formulario registro*****/
+
+.formSecun{
+    position: absolute;
+    top: 75px;
+    transform: translate(340px);
+    background-color: transparent;
+    width: 95vw;
+    height: 380px;
+    text-align: ;
+    border-radius: 8px;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;*/
+}
+.formSecun h2{
+    font-size: 20pt;
+    text-transform: capitalize;
+    margin: 4px auto;
+    color: #ccc;
+    text-align: center;
+}
+
+.div_grupo > label{
+    display: inline-block;
+    padding: 6px;
+    font-weight: bold;
+    padding-left: 70px;
+    text-transform: capitalize;
+
+}
+
+.div_input{
+    position: relative;
+   /* padding-left: 70px;*/
+   text-align: center;
+   padding-left: 20px;
+}
+
+ /*.div_names label, .div_correos p, .div_contraseñas p{
+    margin-bottom: 10px;
+    padding-left: 65px;
+    text-align: left ;
+    
+}*/
+
+/*******estilo a los input*******/
+.celda{
+    width: 12rem;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #222;
+    border-radius: 5px;
+    line-height: 1.7;
+    transition: all .5s ease;
+  /*  padding-left: 15px;*/
+    margin-bottom: 13px;
+    text-align: center;
+
+}
+
+.celda:focus{
+    width: 14rem;
+    border: 2px solid rgb(0,255,254);
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 20px 1px rgb(0,255,224);
+    transition: .5s;
+    text-align: left;
+
+}
+
+/*****mensaje de error***********/
+.mensaje_error{
+    font-size: 9pt;
+    padding-bottom: 5px;
+    text-align: center;
+    /*padding-left: 15vw;*/
+    display: none;
+}
+.mensaje-activo{
+    display: block;
+    margin: -8px auto 0;
+}
+
+/******icono de verificacion******/
+.estado_icon{
+    position: relative;
+    top: 0;
+    right: 30px;
+    opacity: 0;
+   
+}
+.estado_ico2{
+   position: relative;
+   right: 40px;
+   top: 2px;
+   opacity: 0;
+}
+
+.estado-activo{
+    display: block;
+}
+.input_chek{
+    padding: 8px;
+    text-align: left;
+    margin-left: 14vw;
+    color: #008080;
+    font-weight: 700;
+}
+
+
+/********mensaje abvertencia********/
+.abvertencia{
+    text-align: center;
+    height: 20px;
+    background-image: linear-gradient(#945, #911);
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+}
+
+.abvertencia p{
+    margin: 0;
+    font-size: 11pt;
+    font-weight: 500;
+}
+.abvertencia-active{
+    display: block;
+}
+
+.icon{
+    color: yellow;
+}
+.btn_envia{
+    padding: 15px;
+    margin-right: 15vw;
+    text-align: right;
+}
+
+.input_registrar{
+    width: 100px;
+    /*background-color: #004e92;*/
+   background-image: linear-gradient(to bottom, #45b, #243B55);
+    border: none;
+    border-radius: 5px;
+    font-size: 14pt;
+    height: 35px;
+    font-weight: bold;
+    outline: none;
+    color: #fff;
+    box-shadow: 3px 4px 7px -2px #000;
+}
+
+/******mensaje exitoso********/
+.form_exito{
+    text-align: right;
+    color: #184;
+    font-weight: bold;
+    display: none;
+}
+.form_exito-activo{
+    display: block;
+}
+
+
+/********validaciones*********/
+
+.div_correcto .estado_icon{
+    color: #184;
+    opacity: 1;
+}
+.div_correcto .estado_ico2{
+    position: relative;
+    color: #184;
+    opacity: 1;
+}
+.div_correcto .texto{
+    color: #184;
+}
+.div_correcto input{
+    background-color: #333;
+}
+
+/*********validaciones incorrecta******/
+.div_incorrecto .texto{
+    color: #FF0000;
+}
+.div_incorrecto .estado_icon{
+    color: #911;
+    opacity: 1;
+}
+.div_incorrecto .celda{
+    width: 12rem;
+    border: 2px solid #D41616;
+    box-shadow: 0 0 20px 2px #945;
+    background-color: rgba(0,0,0,.6);
+    color: #fcc;
+}
