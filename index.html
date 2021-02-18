@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+        <title>Login v2</title>
+ <link rel="stylseheet" type="text/css" src="Css/estilo.css">   
+        
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css"> 
+         
+    </head>
+    <body>
+        <section class="estilo_form" id="p">
+        <div class="encabezado">
+        <div class="deslizador" id="boton"></div>
+   <button class="btn" id="btnL">Login</button>
+   <button class="btn" id="btnR">Registro</button>
+    </div>
+            
+<form method="post" class="formulario" id="login">
+    <h2>Inicio de Sesion</h2>
+               
+    <div class="div_name">
+       <p>Usuario</p>
+       <input type ="text" class="usuario" id="input_text" name="nombre">            
+       </div>
+       
+       <div class="div_contraseña">
+           <p>Contraseña</p>
+           <input type="password" class="pass" id="codigos" name="contraseña">
+       </div>
+       <div class="input_check">
+           <label><input type="checkbox" id="toques">Mostrar contraseña</label>
+       </div>
+       
+       <div class="btn_enviar">
+           <input type="submit" class="enviar">
+       </div>
+                         
+          </form> 
+          
+          
+<!--segundo formulario-->
+<form class="formSecun" id="registro">
+    <h2>Ingrese sus Datos</h2>
+ 
+ <!--grupo usuario-->   
+ <div class="div_grupo" id="grupo_usuarios">
+        <label for="usuario" class="texto">Usuario</label>
+     <div class="div_input">
+ <input type="text" class="celda" name="usuario" id="usuario">
+ <i class="estado_icon fa fa-times-circle"></i>
+<!-- <i class="estado_ico2 fas fa-check"></i>-->
+     </div>
+     <p class="mensaje_error" id="parrafo">El usuario debe contener de 5 a 13 digitos y solo puede contener numeros, letras y guion bajo.</p>
+    </div>
+    
+    <!--grupo Nombre-->   
+ <div class="div_grupo" id="grupo_nombre">
+        <label for="nombre" class="texto">Nombre</label>
+     <div class="div_input">
+ <input type="text" class="celda" name="nombre" id="nombre">    
+ <i class="estado_icon fa fa-times-circle"></i>
+<!--  <i class="estado_ico2 fas fa-check"></i>-->
+     </div>
+     <p class="mensaje_error" id="parrafo">El nombre debe ser de 4 a 20 digitos puede contener letras, Mayúscula y minúscula.</p>
+    </div> 
+    
+      <!--grupo Contraseña-->   
+ <div class="div_grupo" id="grupo_password">
+        <label for="contraseña" class="texto">Contraseña</label>
+     <div class="div_input">
+ <input type="password" class="celda" name="contraseña" id="codigo">
+ <i class="estado_icon fa fa-times-circle"></i> <!--<i class="estado_ico2 fas fa-check"></i>-->
+
+     </div>
+     <p class="mensaje_error">La contraseña debe de ser de 6 a 15 dígitos.</p>
+    </div> 
+    
+    
+      <!--grupo contraseña2-->   
+ <div class="div_grupo" id="grupo_contraseña2">
+        <label for="contraseña2" class="texto">Repetir Contraseña</label>
+     <div class="div_input">
+ <input type="password" class="celda" name="contraseña2" id="contraseña2">
+ <i class="estado_icon fa fa-times-circle"></i>
+<!--<i class="estado_ico2 fas fa-check-double"></i>-->
+     </div>
+     <p class="mensaje_error">Ambas contraseña deben ser iguales.</p>
+    </div> 
+    
+      <!--grupo Correo Electronico-->   
+ <div class="div_grupo" id="grupo_correo">
+        <label for="correo" class="texto">Correo electrónico</label>
+     <div class="div_input">
+ <input type="email" class="celda" name="correo" id="correo">
+ <i class="estado_icon fa fa-times-circle"></i> <!--<i class="estado_ico2 fas fa-check"></i>-->
+ 
+     </div>
+     <p class="mensaje_error">El correo solo debe contener numeros, letras y punto.</p>
+    </div> 
+    
+      
+    <div class="input_chek">
+        <input type="checkbox" id="toque"><label>Mostrar contraseña</label>
+    </div>
+    
+    <!--mensaje de abvertencia-->
+    <div class="abvertencia">
+        <p><i class="icon fas fa-exclamation-triangle"></i>Error: por favor rellene los datos</p>
+    </div>
+    
+    
+    <div class="btn_envia btn_registro">
+           <button type="submit" class="input_registrar">Registrar</button>
+      <p class="form_exito" id="form_exito">Se guardó Exitosamente</p>     
+       </div>
+</form>
+            
+    </section>
+        
+        
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>   
+  <script src="Js/login.js"></script>   
+        
+    </body>
+</html>
