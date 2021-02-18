@@ -285,25 +285,21 @@ const correo = document.getElementById("correo");
 
 user.placeholder = "Tipo de Usuario";
 user.required = " ";
-user.style.color = "#fff";
 //user.patterns = "{5,13}";
 
 nombre.placeholder = "Escriba su nombre";
 nombre.required = " ";
-nombre.style.color = "#fff";
 
 contraseña.placeholder = "password";
 contraseña.required = " ";
 contraseña.maxLength = "15";
-contraseña.style.color = "#fff";
 //contraseña.patterns = "[a-z]{8,15}";
 
 pass2.placeholder = "Validar Password";
 pass2.required = " ";
 pass2.maxLength = "15";
-pass2.style.color = "#fff";
+
 
 correo.placeholder = "henry@gmail.com";
-correo.style.color = "#fff";
 
 });
